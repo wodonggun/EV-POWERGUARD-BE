@@ -1,0 +1,11 @@
+com\evpowerguard\registration\domain\enumeration\MemberType.class
+com\evpowerguard\registration\domain\User.class
+com\evpowerguard\registration\UserApplication.class
+com\evpowerguard\registration\example\Groomable.class
+com\evpowerguard\registration\domain\enumeration\ChargerType.class
+com\evpowerguard\registration\RepositorySearchesProcessor.class
+com\evpowerguard\registration\UserController.class
+com\evpowerguard\registration\domain\enumeration\LoginType.class
+com\evpowerguard\registration\WebConfig.class
+com\evpowerguard\registration\domain\vo\CarInfo.class
+com\evpowerguard\registration\UserRepository.class
