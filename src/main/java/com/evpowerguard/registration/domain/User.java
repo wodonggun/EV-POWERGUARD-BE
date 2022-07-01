@@ -2,20 +2,17 @@ package com.evpowerguard.registration.domain;
 
 import javax.persistence.*;
 
-import org.hibernate.annotations.GenericGenerator;
+
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.evpowerguard.registration.domain.enumeration.ChargerType;
+
 import com.evpowerguard.registration.domain.enumeration.LoginType;
 import com.evpowerguard.registration.domain.enumeration.MemberType;
 import com.evpowerguard.registration.domain.vo.CarInfo;
 import java.util.Date;
 import org.hibernate.annotations.CreationTimestamp;
 import lombok.*;
-import java.io.Serializable;
-import java.text.SimpleDateFormat;
 
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -31,7 +28,7 @@ public class User {     // Entity. Domain Class.
 
     public User()
     {
-        //setPassword(this.password);
+        System.out.println("User 생성자 실행");
     }
 
    
@@ -62,11 +59,11 @@ public class User {     // Entity. Domain Class.
     //CreateTime
     @Column(updatable=false)
     @CreationTimestamp  //생성시간 자동생성
-    Date CreateTime;
+    Date createTime;
 
     //UpdateTime
     @UpdateTimestamp  //수정시간 자동생성
-    Date UpdateTime;
+    Date updateTime;
 
 
     //LoginTime

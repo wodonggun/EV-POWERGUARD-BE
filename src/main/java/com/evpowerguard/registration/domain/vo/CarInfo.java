@@ -22,13 +22,12 @@ public class CarInfo {
 
     public CarInfo()
     {
-        ;
+        System.out.println("CarInfo 생성자 실행");
     }
 
 
     public CarInfo(String carNumber,String carName, String chargerType, String batteryCapacity)
     {
-        //Assert.notNull(id, "CarInfo 없음.");
         this.carNumber = carNumber;
         this.carName = carName;
         this.chargerType = chargerType;
